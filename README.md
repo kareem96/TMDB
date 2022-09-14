@@ -1,6 +1,6 @@
-# app_clean_architecture_flutter
+# TMDB
 
-Clean Architecture Flutter Movie DB - Labs Expert Dicoding
+Clean Architecture Flutter Movie DB
 
 ## Getting Started
 
