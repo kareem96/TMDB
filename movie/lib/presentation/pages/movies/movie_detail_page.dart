@@ -306,7 +306,7 @@ class _ContentDetailsState extends State<ContentDetails> {
               } else if (state is TrailerVideoEmpty) {
                 return const Text("Data Not Found!");
               } else {
-                return const Text("Failed");
+                return const Text("Something Error!");
               }
             }),
         Text(
@@ -335,7 +335,7 @@ class _ContentDetailsState extends State<ContentDetails> {
                       onTap: () {
                         Navigator.pushReplacementNamed(
                             context, MovieDetailPage.routeName,
-                            arguments: recommendation);
+                            arguments: recommendation.id);
                       },
                       child: ClipRRect(
                         borderRadius:
@@ -361,9 +361,9 @@ class _ContentDetailsState extends State<ContentDetails> {
               ),
             );
           } else if (state is MovieRecommendationEmpty) {
-            return const Text("-");
+            return const Text("Data Not Found!");
           } else {
-            return const Text("Failed");
+            return const Text("Something Error!");
           }
         }),
         const SizedBox(
